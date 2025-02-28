@@ -54,40 +54,38 @@ html, body {
     overflow-x: hidden; /* Prevents unwanted horizontal scroll */
 }
 
-
-.eins {
-    .custom-shape-divider-bottom-1740768152 {
-        position: absolute;
-        bottom: 1px;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-    }
-    
-    .custom-shape-divider-bottom-1740768152 svg {
-        position: relative;
-        display: block;
-        width: calc(128% + 1.3px);
-        height: 122px;
-    }
-    
-    .custom-shape-divider-bottom-1740768152 .shape-fill {
-        fill: #A5BB1AB3;
-    }
-}
-
 body .Green {
     background-color: rgba(165, 187, 26, 0.7) !important;
     min-height: auto;
     width: 100%;
     position: relative; 
 
+    .custom-shape-divider-bottom-1740768152 {
+        position: relative;
+        top: -91.5px;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        margin: 0;
+    }
+    
+    .custom-shape-divider-bottom-1740768152 svg {
+        position: relative;
+        display: block;
+        width: calc(128% + 1.3px);
+        height: 91.5px;
+    }
+    
+    .custom-shape-divider-bottom-1740768152 .shape-fill {
+        fill: #A5BB1AB3;
+    }
+
     .custom-shape-divider-top-1740766610 svg {
         position: relative;
         display: block;
         width: calc(128% + 1.3px);
-        height: 122px;
+        height: 91.5px;
     }
     
     .custom-shape-divider-top-1740766610 .shape-fill {
@@ -157,6 +155,7 @@ body .Green {
     justify-content: center; 
     align-items: center;
     gap: 25px; 
+    margin-bottom: 70px;
 }
 .Socialmedia {
      color: #1a1c20;
