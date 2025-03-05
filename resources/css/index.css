@@ -56,8 +56,8 @@ html, body {
 
 .svg-top-left {
     position: absolute;
-    top: -62%; 
-    left: -38%;
+    top: -62vh; 
+    left: -70vh;
     width: 50% !important;
     height: auto;
     z-index: -2;
@@ -65,8 +65,8 @@ html, body {
 
 .svg-middle-right {
     position: absolute;
-    right: 14%;
-    bottom: -60%;
+    right: 26vh;
+    bottom: -60vh;
     width: 350px;
     height: auto;
     z-index: 1;
