@@ -54,30 +54,66 @@ html, body {
     overflow-x: hidden; /* Prevents unwanted horizontal scroll */
 }
 
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; /* Prevent shrinking */
+    height: auto;
+    margin: 0 auto;
+}
+
 .svg-top-left {
     position: absolute;
-    top: -62vh; 
-    left: -70vh;
-    width: 50% !important;
+    top: -500px;
+    left: -500px;
+    width: 200px;
     height: auto;
     z-index: -2;
 }
 
 .svg-middle-right {
     position: absolute;
-    right: 26vh;
-    bottom: -60%;
+    right: 200px;
+    top: 250px;
     width: 350px;
     height: auto;
     z-index: 1;
     stroke-width: 2px;
 }
 
+.svg-container {
+    position: relative; /* Needed for absolute child positioning */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 35px;
+    margin-top: 55px;
+    margin-bottom: 80px;
+    width: 100%; /* Ensures container doesn't shrink */
+    max-width: 1200px; /* Optional: limit container width */
+}
+
+.svg-bottom-left {
+    position: absolute;
+    left: 20px;
+    bottom: -185px;
+    width: 550px;
+    max-width: 550px;
+    height: auto;
+    z-index: 1;
+}
+
+
 @media (max-width: 767px) {
     .svg-top-left {
       display: none;
     }
     .svg-middle-right{
+        display: none;
+    }
+    .svg-bottom-left {
         display: none;
     }
 }
