@@ -54,6 +54,34 @@ html, body {
     overflow-x: hidden; /* Prevents unwanted horizontal scroll */
 }
 
+.svg-top-left {
+    position: absolute;
+    top: -62%; 
+    left: -38%;
+    width: 50% !important;
+    height: auto;
+    z-index: -2;
+}
+
+.svg-middle-right {
+    position: absolute;
+    right: 14%;
+    bottom: -60%;
+    width: 350px;
+    height: auto;
+    z-index: 1;
+    stroke-width: 2px;
+}
+
+@media (max-width: 767px) {
+    .svg-top-left {
+      display: none;
+    }
+    .svg-middle-right{
+        display: none;
+    }
+}
+
 body .Green {
     background-color: rgba(165, 187, 26, 0.7) !important;
     min-height: auto;
@@ -113,6 +141,7 @@ body .Green {
     padding-top: 98px;
     padding-bottom: 0px;
     text-decoration: none;
+    z-index: 2;
 }
 
 .Vorstellung p {
